@@ -1,14 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  render(){
-    return (
-      <div className="App">
-        <h1>React app</h1>
-      </div>
-    );
-  }
+	render() {
+		const name = 'Joe';
+		const loading = false;
+
+		return <div className="App">{loading ? <h4>Loading...</h4> : <h1>React app from {name}</h1>}</div>;
+	}
 }
 
 export default App;
